@@ -33,10 +33,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    overflow: hidden; 
+    overflow: hidden;
     position: relative;
     transition: padding 0.3s ease;
-}
+  }
 
 .hero-left {
     flex: 1;
@@ -68,12 +68,6 @@
     background-clip: text;
     color: transparent;
     transition: font-size 0.3s ease;
-}
-
-.hero-left p {
-    font-size: 1rem;
-    color: gray;
-    font-weight: 600;
 }
 
 .dynamic-text {
@@ -130,14 +124,16 @@
 .detailSection h2{
     text-align: center;
 }
+.Benefits{
+    padding-bottom: 3rem;
+}
 .benfitsCards{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 1rem;
     border: 1px solid white;
-    /* height: 15rem; */
+    height: 17rem;
     width: 20rem;
     border-radius: 15px;
     background-color: #8098e6;
@@ -170,16 +166,17 @@
     display: flex;
     gap: 1rem;
     /* justify-content: center; */
+
 }
 .Benefits h2{
     text-align: center;
 }
 .BenefitsInnerDiv{
-    height: 18rem;
     display: flex;
-    padding:0rem 7rem 0rem 7rem;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .auth{
     width: 15rem;
@@ -227,11 +224,15 @@
 .additonalDiv p{
     background-color: transparent;
     font-size: 3rem;
-    width: 60%;
+    width: 75%;
     text-align: center;
     color: #000080;
     font-weight: 600;
-    
+    text-shadow: 
+                -1px -1px 0 white,  
+                 1px -1px 0 white,
+                -1px  1px 0 white,
+                 1px  1px 0 white;
 }
 .additonalDiv a{
     text-decoration: none;
@@ -248,6 +249,7 @@
 
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
+
 
 button, a {
     position: relative;
@@ -287,7 +289,6 @@ button, a {
 .student-info {
     background-color: transparent;
     margin-bottom: 1.5rem;
-    width: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -352,7 +353,6 @@ button, a {
 
     .hero-left, .hero-right {
         width: 100%;
-        padding: 1.5rem 0;
     }
 
     .hero-left h1 {
@@ -410,6 +410,7 @@ button, a {
     .DetailImg {
         max-width: 450px;
     }
+    
 }
 
 /* Small Devices (Mobile, 576px to 767.98px) */
@@ -419,7 +420,6 @@ button, a {
         flex-direction: column;
         padding: 30px 20px;
     }
-
     .hero-left h1 {
         font-size: 2.5rem;
         text-align: center;
@@ -435,7 +435,7 @@ button, a {
     }
 
     .model-viewer {
-        max-height: 25rem;
+        max-height: 20rem;
         width: 90%;
     }
 
@@ -445,10 +445,9 @@ button, a {
     }
 
     #logIn, #signUp {
-        width: 80%;
+        width: 100%;
         margin: 0.5rem 0;
     }
-
     /* Detail Section Adjustments */
     .detailSection {
         padding: 2.5rem 1rem;
@@ -486,6 +485,18 @@ button, a {
         max-width: 100%;
         height: auto;
     }
+    .BenefitsInnerDiv{
+        flex-direction: column;
+    }
+    .benfitsCards{
+        width: 70%;
+    }
+    .additonalDiv p{
+        background-color: transparent;
+        font-size: 2rem;
+        width: 90%;
+        font-weight: 650;
+    }
 }
 
 /* Extra Small Devices (Extra Small Mobile, below 576px) */
@@ -495,7 +506,6 @@ button, a {
         flex-direction: column;
         padding: 20px 15px;
     }
-
     .hero-left h1 {
         font-size: 2rem;
         text-align: center;
@@ -518,6 +528,15 @@ button, a {
     /* Navbar Adjustments */
     .navbar-brand {
         font-size: 1.2rem;
+    }
+    .auth {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #logIn, #signUp {
+        width: 100%;
+        margin: 0.5rem 0;
     }
 
     /* Contact Section Heading */
@@ -560,5 +579,29 @@ button, a {
     .DetailImg {
         max-width: 100%;
         height: auto;
+    }
+    .BenefitsInnerDiv{
+        flex-direction: column;
+    }
+    .benfitsCards{
+        width: 70%;
+    }
+    .additonalDiv p{
+        background-color: transparent;
+        font-size: 1.8rem;
+        width: 98%;
+        font-weight: 650;
+
+    }
+    .hero-right{
+        width: 100%;
+    }
+    .heartModel{
+        height: 40rem; width: 40rem"
+    }
+    .OuterContainer-right{
+        padding: 0;
+        width: 100% !important;
+        height: 22rem !important;
     }
 }
