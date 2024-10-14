@@ -1,0 +1,564 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17 24 39);
+    color: white;
+    scrollbar-width: none;
+}
+.navbar{
+    box-shadow: rgba(240, 240, 244, 0.25)  0px 4px 10px;
+}
+.navbar li a{
+    color: white !important;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+}
+.NavBarColor{
+    background-color: #1d6ad8 !important;
+}
+.logoLink{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.logoLink p{
+    font-size: larger;
+}
+.heroSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    overflow: hidden; 
+    position: relative;
+    transition: padding 0.3s ease;
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    padding: 2rem;
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hero-left h1 {
+    font-weight: bold; 
+    font-size: 4rem;
+    width: 100%;
+    background: linear-gradient(45deg, #f7ff00, #ff0000, #00ff87, #0077ff); 
+    background-size: 400%;
+    background-clip: text;
+    color: transparent;
+    transition: font-size 0.3s ease;
+}
+
+.hero-left p {
+    font-size: 1rem;
+    color: gray;
+    font-weight: 600;
+}
+
+.dynamic-text {
+    font-size: 1.5rem;
+    color: #007bff;
+    border-right: 7px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #007bff; }
+}
+
+.model-viewer {
+    width: 100%;
+    height: auto;
+    max-height: 40rem;
+}
+
+/* Scrolled State */
+/* .scrolled .hero-left {
+    transform: translateX(-100%); 
+    opacity: 0;
+}
+
+.scrolled .hero-right {
+    transform: translateX(100%); 
+    opacity: 0; 
+}
+*/
+.detailSection{
+    overflow: hidden;
+}
+.OuterContainer{
+    display: flex;
+    overflow: hidden;
+    background-color: transparent;
+}
+.OuterContainer-left , .OuterContainer-right{
+    padding: 3rem;
+    width: 50%;
+
+} 
+.OuterContainer-right img{
+    height: 100%;
+    width: 100%;
+}
+.OuterContainer-left p{
+    padding-left: 2.3rem;
+}
+.detailSection h2{
+    text-align: center;
+}
+.benfitsCards{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid white;
+    /* height: 15rem; */
+    width: 20rem;
+    border-radius: 15px;
+    background-color: #8098e6;
+}
+
+.icon{
+    font-size: 2rem;
+    background-color: transparent;
+    color: black;
+}
+.benfitsCards h4{
+    background-color: transparent;
+    font-weight: 650;
+}
+.benfitsCards p{
+    background-color: transparent;
+}
+.benfitsCards div{
+    height: 3rem;
+    width: 3rem;
+    background-color: transparent;
+}
+.benfitsCards div img {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+
+}
+.Benefits div{
+    display: flex;
+    gap: 1rem;
+    /* justify-content: center; */
+}
+.Benefits h2{
+    text-align: center;
+}
+.BenefitsInnerDiv{
+    height: 18rem;
+    display: flex;
+    padding:0rem 7rem 0rem 7rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.auth{
+    width: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+#logIn ,#signUp {
+    color: white;
+    text-decoration: none;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 5px;
+    height: 1.9rem;
+}
+#logIn{
+    background-color: orangered !important;
+}
+#signUp{
+    background-color: blueviolet !important;
+}
+.additonalContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.additonalDiv{
+    border: 1px solid white;
+    height: 25rem;
+    background-image: url(image/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.additonalDiv p{
+    background-color: transparent;
+    font-size: 3rem;
+    width: 60%;
+    text-align: center;
+    color: #000080;
+    font-weight: 600;
+    
+}
+.additonalDiv a{
+    text-decoration: none;
+    background-color: orangered;
+    height: 3rem;
+    width: 13rem;
+    color: white;
+    font-weight: 600;
+    font-size:larger;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+button, a {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+  
+  button:active, a:active {
+    transform: scale(0.95); 
+  }
+  
+  button::after, a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(0, 0, 0, 0.2); 
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+  }
+  
+  button:active::after, a:active::after {
+    transform: translate(-50%, -50%) scale(1); 
+  }
+  
+.contact-section {
+    padding: 2rem;
+    background-color: rgb(17 24 39);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.student-info {
+    background-color: transparent;
+    margin-bottom: 1.5rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 2rem;
+}
+#contactUsHeading{
+    margin-bottom: 0;
+}
+.socialMediaLinks{
+    width: 10rem; 
+    display: flex;
+    gap: 1rem;
+}
+.socialMediaLinks a{
+    font-size: 1.5rem;
+}
+
+/* Media Queries */
+
+/* Medium Devices (Tablets, 768px to 991.98px) */
+@media (max-width: 991.98px) and (min-width: 768px) {
+    .heroSection {
+        flex-direction: column;
+        padding: 40px 30px;
+        height: auto;
+    }
+
+    .hero-left, .hero-right {
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+
+    .hero-left h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .dynamic-text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .hero-right {
+        margin-top: 2rem;
+    }
+
+    .model-viewer {
+        max-height: 30rem;
+        width: 80%;
+    }
+}
+
+/* Small Devices (Mobile, 576px to 767.98px) */
+@media (max-width: 991.98px) and (min-width: 768px) {
+    /* Hero Section Adjustments */
+    .heroSection {
+        flex-direction: column;
+        padding: 40px 30px;
+        height: auto;
+    }
+
+    .hero-left, .hero-right {
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+
+    .hero-left h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .dynamic-text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .hero-right {
+        margin-top: 2rem;
+    }
+
+    .model-viewer {
+        max-height: 30rem;
+        width: 80%;
+    }
+
+    /* Detail Section Adjustments */
+    .detailSection {
+        padding: 3rem 1.5rem;
+    }
+
+    .detailSection h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .OuterContainer {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .OuterContainer-left h3 {
+        font-size: 1.4rem;
+
+    }
+    .OuterContainer-left{
+        width: 100%;
+    }
+    .OuterContainer-right{
+        width: 100%;
+    }
+    .OuterContainer-left h4 {
+        font-size: 1.1rem;
+    }
+
+    .OuterContainer-left p {
+        font-size: 0.95rem;
+    }
+
+    .DetailImg {
+        max-width: 450px;
+    }
+}
+
+/* Small Devices (Mobile, 576px to 767.98px) */
+@media (max-width: 767.98px) and (min-width: 576px) {
+    /* Hero Section Adjustments */
+    .heroSection {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .hero-left h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .dynamic-text {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .hero-right {
+        margin-top: 1.5rem;
+    }
+
+    .model-viewer {
+        max-height: 25rem;
+        width: 90%;
+    }
+
+    .auth {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #logIn, #signUp {
+        width: 80%;
+        margin: 0.5rem 0;
+    }
+
+    /* Detail Section Adjustments */
+    .detailSection {
+        padding: 2.5rem 1rem;
+    }
+
+    .detailSection h2 {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .OuterContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .OuterContainer-left, .OuterContainer-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .OuterContainer-left h3 {
+        font-size: 1.3rem;
+    }
+
+    .OuterContainer-left h4 {
+        font-size: 1rem;
+    }
+
+    .OuterContainer-left p {
+        font-size: 0.9rem;
+    }
+
+    .DetailImg {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Extra Small Devices (Extra Small Mobile, below 576px) */
+@media (max-width: 575.98px) {
+    /* Hero Section Adjustments */
+    .heroSection {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+
+    .hero-left h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .dynamic-text {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .hero-right {
+        margin-top: 1rem;
+    }
+
+    .model-viewer {
+        max-height: 20rem;
+        width: 100%;
+    }
+
+    /* Navbar Adjustments */
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    /* Contact Section Heading */
+    #contactUsHeading {
+        font-size: 1.5rem;
+    }
+
+    /* Detail Section Adjustments */
+    .detailSection {
+        padding: 2rem 0.5rem;
+    }
+
+    .detailSection h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .OuterContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .OuterContainer-left {
+        padding: 0;
+    }
+
+    .OuterContainer-left h3 {
+        font-size: 1.2rem;
+    }
+
+    .OuterContainer-left h4 {
+        font-size: 0.95rem;
+    }
+
+    .OuterContainer-left p {
+        font-size: 0.85rem;
+    }
+
+    .DetailImg {
+        max-width: 100%;
+        height: auto;
+    }
+}
